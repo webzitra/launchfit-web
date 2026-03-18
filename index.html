@@ -509,7 +509,7 @@
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.15 });
+        }, { threshold: 0.05 });
 
         document.querySelectorAll('.journey-step, .bento-card, .pricing-card, .compare-card, .faq-item, .hero-proof, .demo-wrapper').forEach(function(el) {
             el.classList.add('reveal');
