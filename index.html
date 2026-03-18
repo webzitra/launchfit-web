@@ -4,369 +4,394 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>LaunchFit — Professional Websites for Fitness Coaches | Ready in 24h</title>
-    <meta name="description" content="Get a stunning, high-converting website built specifically for fitness coaches and personal trainers. Professional design, ready in 24 hours. Starting at $299.">
+    <title>LaunchFit — Build Your Fitness Website in Minutes</title>
+    <meta name="description" content="AI-powered website builder for fitness coaches. Choose your style, add your content, go live — all in under 5 minutes. No coding, no waiting.">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="LaunchFit — Websites for Fitness Coaches">
-    <meta property="og:description" content="Professional websites built specifically for fitness coaches. Ready in 24 hours. Starting at $299.">
+    <meta property="og:title" content="LaunchFit — Build Your Fitness Website in Minutes">
+    <meta property="og:description" content="AI-powered website builder for fitness coaches. Go live in minutes, not weeks.">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
 
     <link rel="preload" as="font" type="font/woff2" href="fonts/inter-latin.woff2" crossorigin>
-
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- JSON-LD -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "LaunchFit",
-        "description": "Professional websites for fitness coaches and personal trainers",
-        "url": "https://launchfit.com",
-        "priceRange": "$299-$999"
-    }
+    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"LaunchFit","description":"AI-powered website builder for fitness coaches","applicationCategory":"WebApplication","offers":{"@type":"Offer","price":"299","priceCurrency":"USD"}}
     </script>
 </head>
 <body>
     <!-- NAVBAR -->
     <nav class="navbar" id="navbar">
-        <div class="container">
-            <a href="/" class="logo">
-                Launch<span class="logo-accent">Fit</span>
-            </a>
-            <div class="nav-links">
-                <a href="#how-it-works">How It Works</a>
+        <div class="container nav-container">
+            <a href="/" class="logo">LAUNCH<span class="logo-accent">FIT</span></a>
+            <div class="nav-links" id="nav-links">
+                <a href="#journey">How It Works</a>
+                <a href="#demo">Live Demo</a>
                 <a href="#pricing">Pricing</a>
-                <a href="#demo">See Demo</a>
             </div>
-            <a href="#cta" class="btn btn-primary btn-nav">Get Started</a>
+            <a href="#start" class="btn btn-primary btn-nav">Build Your Site</a>
             <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
+    <!-- PROGRESS BAR (gamification) -->
+    <div class="scroll-progress" id="scroll-progress">
+        <div class="scroll-progress-fill" id="scroll-progress-fill"></div>
+    </div>
+
     <main>
-        <!-- HERO -->
-        <section class="hero">
-            <div class="hero-bg"></div>
+        <!-- ═══ HERO ═══ -->
+        <section class="hero" id="hero">
+            <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80">
+                <source src="https://videos.pexels.com/video-files/4761434/4761434-uhd_2560_1440_25fps.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <div class="hero-badge">Built for fitness professionals</div>
-                <h1>Your clients find you online.<br><span class="text-accent">Make sure they stay.</span></h1>
-                <p class="hero-sub">Professional websites designed specifically for fitness coaches and personal trainers. High-converting, mobile-first, ready in 24 hours.</p>
+                <div class="hero-badge">AI-Powered Website Builder</div>
+                <h1>Build your fitness website<br><span class="text-glow">in minutes, not months.</span></h1>
+                <p class="hero-sub">Choose a template. Add your content. Go live. No coding, no designers, no waiting. Just you and your brand.</p>
                 <div class="hero-cta">
-                    <a href="#cta" class="btn btn-primary btn-lg">Get Your Website &rarr;</a>
-                    <a href="#demo" class="btn btn-outline btn-lg">See Live Demo</a>
+                    <a href="#start" class="btn btn-primary btn-lg">Start Building Free</a>
+                    <a href="#demo" class="btn btn-glass btn-lg">See It In Action</a>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-value">24h</span>
-                        <span class="stat-label">Delivery</span>
+                <div class="hero-proof">
+                    <div class="proof-item">
+                        <span class="proof-value" data-count="99">0</span><span class="proof-unit">+</span>
+                        <span class="proof-label">PageSpeed Score</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-value">$299</span>
-                        <span class="stat-label">Starting at</span>
+                    <div class="proof-divider"></div>
+                    <div class="proof-item">
+                        <span class="proof-value" data-count="5">0</span><span class="proof-unit"> min</span>
+                        <span class="proof-label">Setup Time</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-value">100%</span>
-                        <span class="stat-label">Mobile-ready</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-value">99+</span>
-                        <span class="stat-label">PageSpeed</span>
+                    <div class="proof-divider"></div>
+                    <div class="proof-item">
+                        <span class="proof-value" data-count="0">0</span><span class="proof-unit"> code</span>
+                        <span class="proof-label">Required</span>
                     </div>
                 </div>
             </div>
+            <div class="scroll-hint" id="scroll-hint">
+                <span>Scroll to explore</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
         </section>
 
-        <!-- PROBLEM -->
-        <section class="section" id="problem">
+        <!-- ═══ JOURNEY — Gamified scroll experience ═══ -->
+        <section class="journey" id="journey">
             <div class="container">
-                <div class="section-label">The Problem</div>
-                <h2>You're a great coach.<br>But your website doesn't show it.</h2>
-                <div class="problem-grid">
-                    <div class="problem-card">
-                        <div class="problem-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-                        <h3>No time to build</h3>
-                        <p>You're busy training clients, not learning WordPress. And agencies take weeks and charge thousands.</p>
+                <div class="journey-header">
+                    <div class="section-label">Your Journey</div>
+                    <h2>From idea to live website in 3 steps</h2>
+                </div>
+
+                <!-- STEP 1 -->
+                <div class="journey-step" data-step="1">
+                    <div class="step-indicator">
+                        <div class="step-ring">
+                            <span>1</span>
+                        </div>
+                        <div class="step-line"></div>
                     </div>
-                    <div class="problem-card">
-                        <div class="problem-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg></div>
-                        <h3>Instagram isn't enough</h3>
-                        <p>You don't own your Instagram. Algorithm changes, account bans — your business disappears overnight.</p>
+                    <div class="step-content">
+                        <div class="step-card card-3d">
+                            <div class="step-tag">60 seconds</div>
+                            <h3>Pick your style</h3>
+                            <p>Choose from professionally designed templates built specifically for fitness coaches, personal trainers, and gym owners. Every template is optimized for bookings and conversions.</p>
+                            <div class="step-visual">
+                                <div class="template-preview t1">
+                                    <div class="template-bar"></div>
+                                    <div class="template-hero-block"></div>
+                                    <div class="template-grid">
+                                        <div></div><div></div><div></div>
+                                    </div>
+                                </div>
+                                <div class="template-preview t2 floating">
+                                    <div class="template-bar"></div>
+                                    <div class="template-hero-block"></div>
+                                    <div class="template-grid">
+                                        <div></div><div></div><div></div>
+                                    </div>
+                                </div>
+                                <div class="template-preview t3 floating-slow">
+                                    <div class="template-bar"></div>
+                                    <div class="template-hero-block"></div>
+                                    <div class="template-grid">
+                                        <div></div><div></div><div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="problem-card">
-                        <div class="problem-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-                        <h3>Losing clients to competitors</h3>
-                        <p>When someone Googles "personal trainer near me", they find coaches with professional websites. Not yours.</p>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="journey-step" data-step="2">
+                    <div class="step-indicator">
+                        <div class="step-ring">
+                            <span>2</span>
+                        </div>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-card card-3d">
+                            <div class="step-tag">2 minutes</div>
+                            <h3>Make it yours</h3>
+                            <p>Tell the AI about your business. Your name, services, pricing, story. It generates everything — headlines, descriptions, even your color scheme. Review, tweak, done.</p>
+                            <div class="step-visual chat-visual">
+                                <div class="chat-bubble user">"I'm a personal trainer in Austin, TX. I specialize in strength training and nutrition coaching."</div>
+                                <div class="chat-bubble ai">Building your website... Generating headlines, services section, pricing table, contact form, SEO tags...</div>
+                                <div class="chat-bubble ai done">Your website is ready. Preview it now.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="journey-step" data-step="3">
+                    <div class="step-indicator">
+                        <div class="step-ring complete">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-card card-3d">
+                            <div class="step-tag">Instant</div>
+                            <h3>Go live</h3>
+                            <p>One click to publish. Your site is live on your own domain with SSL, blazing-fast hosting, and perfect Google scores. You own the code — no lock-in, ever.</p>
+                            <div class="step-visual launch-visual">
+                                <div class="launch-url">
+                                    <div class="url-lock">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                    </div>
+                                    <span>yourname-fitness.com</span>
+                                </div>
+                                <div class="launch-scores">
+                                    <div class="score-pill green">Performance 99</div>
+                                    <div class="score-pill green">SEO 100</div>
+                                    <div class="score-pill green">Accessibility 95</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- HOW IT WORKS -->
-        <section class="section section-dark" id="how-it-works">
-            <div class="container">
-                <div class="section-label">How It Works</div>
-                <h2>From zero to live website in 3 steps</h2>
-                <div class="steps-grid">
-                    <div class="step-card">
-                        <div class="step-number">1</div>
-                        <h3>Tell us about your brand</h3>
-                        <p>Fill out a quick form — your name, services, colors, and style preferences. Takes 5 minutes.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">2</div>
-                        <h3>We build your site</h3>
-                        <p>Our team crafts a professional website tailored to your fitness brand. Custom design, real content, optimized for conversions.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">3</div>
-                        <h3>Go live in 24 hours</h3>
-                        <p>Review your site, request changes, and launch. You own the code. No lock-in, no monthly traps.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- WHAT YOU GET -->
+        <!-- ═══ FEATURES ═══ -->
         <section class="section" id="features">
             <div class="container">
-                <div class="section-label">What You Get</div>
-                <h2>Everything a fitness coach needs</h2>
-                <div class="features-grid">
-                    <div class="feature">
-                        <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
-                        <h3>Client Booking</h3>
-                        <p>Integrated scheduling — Calendly, Cal.com, or custom form. Clients book directly from your site.</p>
+                <div class="section-label">Built For Coaches</div>
+                <h2>Everything you need. Nothing you don't.</h2>
+                <div class="features-bento">
+                    <div class="bento-card bento-large card-3d">
+                        <div class="bento-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        </div>
+                        <h3>Smart Booking</h3>
+                        <p>Clients book sessions directly from your site. Integrates with Calendly, Cal.com, or our built-in scheduler. Automated confirmations, reminders, and calendar sync.</p>
                     </div>
-                    <div class="feature">
-                        <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+                    <div class="bento-card card-3d">
+                        <div class="bento-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
+                        </div>
                         <h3>Transformation Gallery</h3>
-                        <p>Before/after showcase that builds trust. Your best results, front and center.</p>
+                        <p>Before/after showcase that builds instant trust with potential clients.</p>
                     </div>
-                    <div class="feature">
-                        <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
-                        <h3>Mobile-First Design</h3>
-                        <p>80% of your clients browse on their phone. Your site looks perfect on every screen.</p>
+                    <div class="bento-card card-3d">
+                        <div class="bento-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                        </div>
+                        <h3>Mobile-First</h3>
+                        <p>80% of your clients browse on their phone. Pixel-perfect on every screen.</p>
                     </div>
-                    <div class="feature">
-                        <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-                        <h3>Google-Ready SEO</h3>
-                        <p>"Personal trainer [your city]" — we optimize so you rank where it matters.</p>
+                    <div class="bento-card card-3d">
+                        <div class="bento-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        </div>
+                        <h3>SEO That Works</h3>
+                        <p>"Personal trainer [your city]" — rank where your clients actually search.</p>
                     </div>
-                    <div class="feature">
-                        <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-                        <h3>Lightning Fast</h3>
-                        <p>99+ PageSpeed score. No bloated WordPress themes. Pure, clean, fast code.</p>
+                    <div class="bento-card bento-large card-3d">
+                        <div class="bento-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>AI Content Editor</h3>
+                        <p>Need to update your site? Just tell the AI what you want to change — in plain English. "Add a new training program" or "Update my pricing". No code, no designer, no delays. Your site updates in seconds.</p>
                     </div>
-                    <div class="feature">
-                        <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="13.5" cy="6.5" r="2.5"/><path d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5z"/><path d="M2 17l3-3a2 2 0 0 1 3 0l3 3 4-4a2 2 0 0 1 3 0l4 4"/></svg></div>
-                        <h3>Your Brand, Your Style</h3>
-                        <p>Custom colors, fonts, and layout matched to your fitness brand identity.</p>
+                    <div class="bento-card card-3d">
+                        <div class="bento-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        </div>
+                        <h3>Blazing Fast</h3>
+                        <p>99+ PageSpeed. No WordPress bloat. Clean code that loads instantly.</p>
+                    </div>
+                    <div class="bento-card card-3d">
+                        <div class="bento-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>You Own It</h3>
+                        <p>Full source code. Your domain. No lock-in. Leave anytime, take everything.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- PRICING -->
-        <section class="section section-dark" id="pricing">
+        <!-- ═══ DEMO ═══ -->
+        <section class="section section-dark" id="demo">
             <div class="container">
-                <div class="section-label">Pricing</div>
-                <h2>Simple, transparent pricing</h2>
-                <p class="section-sub">No hidden fees. No monthly traps. Pay once, own your website forever.</p>
+                <div class="section-label">Live Demo</div>
+                <h2>This is what you get</h2>
+                <p class="section-sub">A real website built with LaunchFit. Scroll through it. Click around. This is the quality every client receives.</p>
+                <div class="demo-wrapper card-3d">
+                    <div class="demo-browser">
+                        <div class="browser-dots"><span></span><span></span><span></span></div>
+                        <div class="browser-url">adamjirsa-fitness.com</div>
+                        <a href="https://demo-adam-jirsa.netlify.app" target="_blank" rel="noopener" class="browser-external" title="Open in new tab">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </div>
+                    <div class="demo-frame">
+                        <iframe src="https://demo-adam-jirsa.netlify.app" title="Demo fitness website" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ PRICING ═══ -->
+        <section class="section" id="pricing">
+            <div class="container">
+                <div class="section-label">Simple Pricing</div>
+                <h2>Pay once. Own it forever.</h2>
+                <p class="section-sub">No subscriptions required. No hidden fees. Just a website that works.</p>
                 <div class="pricing-grid">
-                    <div class="pricing-card">
+                    <div class="pricing-card card-3d">
                         <div class="pricing-name">Starter</div>
                         <div class="pricing-price">$299</div>
-                        <div class="pricing-period">one-time</div>
+                        <div class="pricing-period">one-time payment</div>
                         <ul class="pricing-features">
                             <li>Single-page website</li>
                             <li>Mobile responsive</li>
                             <li>Contact form</li>
-                            <li>Booking link integration</li>
-                            <li>SEO basics</li>
-                            <li>SSL &amp; fast hosting</li>
-                            <li>Delivered in 24h</li>
+                            <li>Booking link</li>
+                            <li>SEO optimized</li>
+                            <li>SSL + fast hosting</li>
                         </ul>
-                        <a href="#cta" class="btn btn-outline btn-block">Get Started</a>
+                        <a href="#start" class="btn btn-outline btn-block">Get Started</a>
                     </div>
-                    <div class="pricing-card pricing-featured">
+                    <div class="pricing-card pricing-featured card-3d">
                         <div class="pricing-badge">Most Popular</div>
                         <div class="pricing-name">Pro</div>
                         <div class="pricing-price">$599</div>
-                        <div class="pricing-period">one-time</div>
+                        <div class="pricing-period">one-time payment</div>
                         <ul class="pricing-features">
                             <li>Multi-page website</li>
                             <li>Transformation gallery</li>
                             <li>Blog section</li>
                             <li>Instagram feed</li>
-                            <li>Advanced SEO</li>
+                            <li>AI content editor</li>
                             <li>Custom design</li>
-                            <li>Delivered in 24h</li>
                         </ul>
-                        <a href="#cta" class="btn btn-primary btn-block">Get Started</a>
+                        <a href="#start" class="btn btn-primary btn-block">Get Started</a>
                     </div>
-                    <div class="pricing-card">
+                    <div class="pricing-card card-3d">
                         <div class="pricing-name">Premium</div>
                         <div class="pricing-price">$999</div>
-                        <div class="pricing-period">one-time</div>
+                        <div class="pricing-period">one-time payment</div>
                         <ul class="pricing-features">
                             <li>Everything in Pro</li>
-                            <li>Online store (merch, programs)</li>
+                            <li>Online store</li>
                             <li>Client portal</li>
-                            <li>Email marketing setup</li>
+                            <li>Email marketing</li>
                             <li>Priority support</li>
-                            <li>2 rounds of revisions</li>
-                            <li>Delivered in 48h</li>
+                            <li>Unlimited revisions</li>
                         </ul>
-                        <a href="#cta" class="btn btn-outline btn-block">Get Started</a>
+                        <a href="#start" class="btn btn-outline btn-block">Get Started</a>
                     </div>
                 </div>
-                <p class="pricing-note">Optional: $49/mo for ongoing updates, hosting &amp; AI-powered content editor</p>
+                <p class="pricing-note">Optional: $49/mo for ongoing AI editing, hosting, and priority support</p>
             </div>
         </section>
 
-        <!-- DEMO -->
-        <section class="section" id="demo">
-            <div class="container">
-                <div class="section-label">Live Demo</div>
-                <h2>See what your website could look like</h2>
-                <p class="section-sub">Real example built for a fitness coach. Your site will be customized to match your brand.</p>
-                <div class="demo-preview">
-                    <div class="demo-browser">
-                        <div class="browser-dots">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <div class="browser-url">adamjirsa-fitness.com</div>
-                    </div>
-                    <div class="demo-content">
-                        <iframe src="https://wz-adam-jirsa.netlify.app" class="demo-iframe" title="Demo fitness website" loading="lazy"></iframe>
-                    </div>
-                </div>
-                <div class="demo-cta">
-                    <a href="https://wz-adam-jirsa.netlify.app" target="_blank" class="btn btn-outline btn-lg" rel="noopener">View Full Demo</a>
-                    <a href="#cta" class="btn btn-primary btn-lg">I Want This</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- COMPARISON -->
+        <!-- ═══ COMPARISON ═══ -->
         <section class="section section-dark" id="compare">
             <div class="container">
-                <div class="section-label">Why LaunchFit</div>
-                <h2>LaunchFit vs. the alternatives</h2>
-                <div class="compare-table-wrap">
-                    <table class="compare-table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>LaunchFit</th>
-                                <th>DIY (Wix/Squarespace)</th>
-                                <th>Web Agency</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Price</td>
-                                <td class="highlight">$299–$999</td>
-                                <td>$150–300/yr</td>
-                                <td>$2,000–10,000</td>
-                            </tr>
-                            <tr>
-                                <td>Delivery time</td>
-                                <td class="highlight">24 hours</td>
-                                <td>Days–weeks (you build it)</td>
-                                <td>2–6 weeks</td>
-                            </tr>
-                            <tr>
-                                <td>Design quality</td>
-                                <td class="highlight">Professional, custom</td>
-                                <td>Template-based</td>
-                                <td>Professional, custom</td>
-                            </tr>
-                            <tr>
-                                <td>PageSpeed</td>
-                                <td class="highlight">99+</td>
-                                <td>50–70</td>
-                                <td>70–90</td>
-                            </tr>
-                            <tr>
-                                <td>You own the code</td>
-                                <td class="highlight">Yes</td>
-                                <td>No (locked in)</td>
-                                <td>Usually yes</td>
-                            </tr>
-                            <tr>
-                                <td>Fitness-specific</td>
-                                <td class="highlight">Yes</td>
-                                <td>No</td>
-                                <td>Rarely</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="section-label">The Difference</div>
+                <h2>Why coaches choose LaunchFit</h2>
+                <div class="compare-cards">
+                    <div class="compare-card old">
+                        <h3>The old way</h3>
+                        <ul>
+                            <li class="negative">Spend weeks learning Wix or WordPress</li>
+                            <li class="negative">Pay $3,000+ for an agency that doesn't understand fitness</li>
+                            <li class="negative">End up with a slow, generic template</li>
+                            <li class="negative">Can't update it without calling your developer</li>
+                            <li class="negative">Locked into a platform you don't own</li>
+                        </ul>
+                    </div>
+                    <div class="compare-card new">
+                        <h3>The LaunchFit way</h3>
+                        <ul>
+                            <li class="positive">Tell the AI about your business, get a site in minutes</li>
+                            <li class="positive">Built specifically for fitness coaches from the ground up</li>
+                            <li class="positive">99+ PageSpeed, clean code, no bloat</li>
+                            <li class="positive">Update anything with plain English AI commands</li>
+                            <li class="positive">You own the code. Leave anytime, take everything.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ -->
+        <!-- ═══ FAQ ═══ -->
         <section class="section" id="faq">
             <div class="container container-sm">
-                <div class="section-label">FAQ</div>
-                <h2>Common questions</h2>
+                <div class="section-label">Questions</div>
+                <h2>Frequently asked</h2>
                 <div class="faq-list">
                     <details class="faq-item">
-                        <summary>How can you deliver in 24 hours?</summary>
-                        <p>We combine AI-powered tools with expert designers. Our system generates a custom website from your brief, which our team then refines and polishes. The result: agency-quality work at startup speed.</p>
+                        <summary>How does it work? Is there coding involved?</summary>
+                        <p>Zero coding. You answer a few questions about your business, pick a style you like, and our AI builds your entire website. You review it, make changes in plain English, and publish. The whole process takes about 5 minutes.</p>
                     </details>
                     <details class="faq-item">
-                        <summary>Do I own my website?</summary>
-                        <p>Yes, 100%. You get the full source code, hosted on your own domain. No lock-in, no proprietary platforms. If you ever want to move, you take everything with you.</p>
+                        <summary>Do I really own the website?</summary>
+                        <p>Yes. You get the complete source code hosted on your own domain. There's no proprietary platform locking you in. If you ever want to leave, you take everything with you — code, content, domain, all of it.</p>
                     </details>
                     <details class="faq-item">
-                        <summary>Can I edit my website myself?</summary>
-                        <p>With our optional $49/mo plan, you get access to an AI-powered editor. Just describe what you want to change in plain English, and the AI updates your site. No coding needed.</p>
+                        <summary>How do I update my site after launch?</summary>
+                        <p>With the AI editor (included in Pro and Premium, or $49/mo add-on). Just describe what you want: "Add a new training program called Summer Shred for $199" and the AI updates your site in seconds. No technical knowledge needed.</p>
                     </details>
                     <details class="faq-item">
-                        <summary>What if I don't like the design?</summary>
-                        <p>We offer revisions before going live. If you're not happy, we'll rework it until you are. Pro and Premium plans include dedicated revision rounds.</p>
+                        <summary>What makes this different from Wix or Squarespace?</summary>
+                        <p>Speed, quality, and ownership. Wix gives you a slow website on their platform that you don't own. We give you a 99+ PageSpeed site with clean code you fully own. Plus, it's built specifically for fitness professionals — not a generic template.</p>
                     </details>
                     <details class="faq-item">
-                        <summary>Do I need to provide photos?</summary>
-                        <p>It helps! But if you don't have professional photos yet, we can use high-quality stock images matched to your brand. You can always swap them later.</p>
+                        <summary>What if I need changes to the design?</summary>
+                        <p>Pro and Premium plans include revision rounds before launch. After launch, you can make unlimited changes through the AI editor. Need something more complex? Our team is available for custom work.</p>
                     </details>
                     <details class="faq-item">
-                        <summary>Is there a monthly fee?</summary>
-                        <p>The website itself is a one-time payment. Hosting and domain cost about $10–15/year. The optional $49/mo plan adds AI editing, priority support, and regular updates.</p>
+                        <summary>Is there a money-back guarantee?</summary>
+                        <p>If you're not happy with your website before it goes live, we'll rework it until you are or refund your payment. We want you to love your site as much as your clients love your coaching.</p>
                     </details>
                 </div>
             </div>
         </section>
 
-        <!-- CTA -->
-        <section class="section section-cta" id="cta">
+        <!-- ═══ FINAL CTA ═══ -->
+        <section class="section section-final" id="start">
             <div class="container container-sm">
-                <h2>Ready to launch your fitness brand online?</h2>
-                <p>Tell us about your coaching business. We'll have your website ready in 24 hours.</p>
-                <form class="cta-form" id="cta-form" action="https://formspree.io/f/placeholder" method="POST">
+                <div class="final-glow"></div>
+                <h2>Your future clients are searching right now.</h2>
+                <p>Every day without a website is a day you're invisible. Build yours in 5 minutes.</p>
+                <form class="start-form" id="start-form" action="https://formspree.io/f/placeholder" method="POST">
                     <div class="form-row">
                         <input type="text" name="name" placeholder="Your name" required>
                         <input type="email" name="email" placeholder="Your email" required>
                     </div>
-                    <div class="form-row">
-                        <input type="text" name="business" placeholder="Business name (e.g. FitCoach Jake)">
-                        <select name="plan">
-                            <option value="">Select a plan</option>
-                            <option value="starter">Starter — $299</option>
-                            <option value="pro">Pro — $599</option>
-                            <option value="premium">Premium — $999</option>
-                        </select>
-                    </div>
-                    <textarea name="message" placeholder="Tell us about your coaching business — services, style, anything you want on your site..." rows="4"></textarea>
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">Get My Website &rarr;</button>
-                    <p class="form-note">We'll reply within 2 hours with a plan for your site.</p>
+                    <input type="text" name="business" placeholder="Your fitness business name">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Start Building My Website</button>
+                    <p class="form-note">Free to start. No credit card required.</p>
                 </form>
             </div>
         </section>
@@ -375,23 +400,16 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo">Launch<span class="logo-accent">Fit</span></span>
-                    <p>Professional websites for fitness coaches. Fast, affordable, yours.</p>
-                </div>
+            <div class="footer-inner">
+                <span class="logo">LAUNCH<span class="logo-accent">FIT</span></span>
                 <div class="footer-links">
-                    <a href="#how-it-works">How It Works</a>
+                    <a href="#journey">How It Works</a>
                     <a href="#pricing">Pricing</a>
                     <a href="#demo">Demo</a>
                     <a href="#faq">FAQ</a>
+                    <a href="mailto:hello@launchfit.com">Contact</a>
                 </div>
-                <div class="footer-contact">
-                    <a href="mailto:hello@launchfit.com">hello@launchfit.com</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 LaunchFit. All rights reserved.</p>
+                <p class="footer-copy">&copy; 2026 LaunchFit</p>
             </div>
         </div>
     </footer>
@@ -400,60 +418,120 @@
     (function() {
         'use strict';
 
-        // Navbar scroll
+        // ── Navbar scroll ──
         var navbar = document.getElementById('navbar');
+        var scrollHint = document.getElementById('scroll-hint');
         window.addEventListener('scroll', function() {
             navbar.classList.toggle('scrolled', window.scrollY > 50);
+            if (scrollHint) scrollHint.style.opacity = Math.max(0, 1 - window.scrollY / 300);
         });
 
-        // Mobile menu
+        // ── Scroll progress bar ──
+        var progressFill = document.getElementById('scroll-progress-fill');
+        window.addEventListener('scroll', function() {
+            var h = document.documentElement.scrollHeight - window.innerHeight;
+            var pct = h > 0 ? (window.scrollY / h) * 100 : 0;
+            progressFill.style.width = pct + '%';
+        });
+
+        // ── Mobile menu ──
         var toggle = document.getElementById('nav-toggle');
-        var links = document.querySelector('.nav-links');
-        if (toggle && links) {
+        var links = document.getElementById('nav-links');
+        if (toggle) {
             toggle.addEventListener('click', function() {
                 links.classList.toggle('active');
                 toggle.classList.toggle('active');
             });
         }
 
-        // FAQ accordion
-        document.querySelectorAll('.faq-item').forEach(function(item) {
-            item.addEventListener('toggle', function() {
-                if (item.open) {
-                    document.querySelectorAll('.faq-item').forEach(function(other) {
-                        if (other !== item) other.open = false;
-                    });
-                }
-            });
-        });
-
-        // Smooth scroll
+        // ── Smooth scroll ──
         document.querySelectorAll('a[href^="#"]').forEach(function(a) {
             a.addEventListener('click', function(e) {
-                var target = document.querySelector(a.getAttribute('href'));
-                if (target) {
+                var t = document.querySelector(a.getAttribute('href'));
+                if (t) {
                     e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth' });
+                    t.scrollIntoView({ behavior: 'smooth' });
                     if (links) links.classList.remove('active');
                     if (toggle) toggle.classList.remove('active');
                 }
             });
         });
 
-        // Fade-in on scroll
+        // ── FAQ accordion ──
+        document.querySelectorAll('.faq-item').forEach(function(item) {
+            item.addEventListener('toggle', function() {
+                if (item.open) {
+                    document.querySelectorAll('.faq-item').forEach(function(o) {
+                        if (o !== item) o.open = false;
+                    });
+                }
+            });
+        });
+
+        // ── 3D card tilt ──
+        document.querySelectorAll('.card-3d').forEach(function(card) {
+            card.addEventListener('mousemove', function(e) {
+                var rect = card.getBoundingClientRect();
+                var x = (e.clientX - rect.left) / rect.width - 0.5;
+                var y = (e.clientY - rect.top) / rect.height - 0.5;
+                card.style.transform = 'perspective(800px) rotateY(' + (x * 6) + 'deg) rotateX(' + (-y * 6) + 'deg) translateZ(10px)';
+            });
+            card.addEventListener('mouseleave', function() {
+                card.style.transform = '';
+            });
+        });
+
+        // ── Animated counters ──
+        var counted = false;
+        function animateCounters() {
+            if (counted) return;
+            document.querySelectorAll('[data-count]').forEach(function(el) {
+                var target = parseInt(el.dataset.count);
+                var start = performance.now();
+                var duration = 1500;
+                function update(now) {
+                    var p = Math.min((now - start) / duration, 1);
+                    var eased = 1 - Math.pow(1 - p, 3);
+                    el.textContent = Math.round(target * eased);
+                    if (p < 1) requestAnimationFrame(update);
+                }
+                requestAnimationFrame(update);
+            });
+            counted = true;
+        }
+
+        // ── Scroll reveal ──
         var observer = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
+                    if (entry.target.closest('.hero')) animateCounters();
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1 });
+        }, { threshold: 0.15 });
 
-        document.querySelectorAll('.problem-card, .step-card, .feature, .pricing-card, .faq-item').forEach(function(el) {
-            el.classList.add('fade-in');
+        document.querySelectorAll('.journey-step, .bento-card, .pricing-card, .compare-card, .faq-item, .hero-proof, .demo-wrapper').forEach(function(el) {
+            el.classList.add('reveal');
             observer.observe(el);
         });
+
+        // ── Chat typing animation ──
+        var chatObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    var bubbles = entry.target.querySelectorAll('.chat-bubble');
+                    bubbles.forEach(function(b, i) {
+                        setTimeout(function() { b.classList.add('show'); }, i * 1200);
+                    });
+                    chatObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        var chatVisual = document.querySelector('.chat-visual');
+        if (chatVisual) chatObserver.observe(chatVisual);
+
     })();
     </script>
 </body>
